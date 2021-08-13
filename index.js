@@ -19,21 +19,24 @@
 var toggle = false;
 $('#toggle-circle').on('click',function(){
 
-    if(!toggle){
-        $('body').addClass('bg-color-black');
-        $('#text').addClass('color-white');
-        $('#toggle-circle').css({
-            "margin-left": "7.37rem"
-        });
-        toggle = true;
-    }else{
-        $('body').removeClass('bg-color-black');
-        $('#text').removeClass('color-white');
-        $('#toggle-circle').css({
-            "margin-left": "0rem"
-        });
-        toggle = false;
-    }
+    // if(!toggle){
+    //     $('body').addClass('bg-color-black');
+    //     $('#text').addClass('color-white');
+    //     $('#toggle-circle').css({
+    //         "margin-left": "7.37rem"
+    //     });
+    //     toggle = true;
+    // }else{
+    //     $('body').removeClass('bg-color-black');
+    //     $('#text').removeClass('color-white');
+    //     $('#toggle-circle').css({
+    //         "margin-left": "0rem"
+    //     });
+    //     toggle = false;
+    // }
+    $('body').toggleClass('bg-color-black');
+    $('#text').toggleClass('color-white');
+    $('#toggle-circle').toggleClass('ml-toggle');
 
 
 });
